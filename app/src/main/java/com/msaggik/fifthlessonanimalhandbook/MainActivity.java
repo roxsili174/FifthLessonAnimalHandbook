@@ -3,6 +3,7 @@ package com.msaggik.fifthlessonanimalhandbook;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     // создание полей
-    private ImageButton imageButton;
+    private android.widget.Button Button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // присваивание id полям
-        imageButton = findViewById(R.id.imageButton);
+        Button = findViewById(R.id.imageButton);
 
         // обработка нажатия кнопки
-        imageButton.setOnClickListener(listener);
+        Button.setOnClickListener(listener);
     }
 
     // создание слушателя
